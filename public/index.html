@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Time Tracker · hmsk.life</title>
+<meta name="description" content="A free time tracker in your browser: timer, projects with hourly rates, weekly view, CSV export, and tracked hours straight into an invoice. No signup, data stays on your device.">
+<meta name="theme-color" content="#0B0F0C">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="app.css?v=1">
+</head>
+<body>
+<a class="skip" href="#main" id="skipLink">Skip to content</a>
+<nav class="strip" aria-label="hmsk.life">
+  <a class="strip__home" id="lnkHome" href="/tools/time-tracker/">← hmsk.life</a>
+  <span class="strip__sp"></span>
+  <button type="button" class="strip__lang" id="langBtn" lang="de" aria-label="Auf Deutsch wechseln">DE</button>
+  <a id="lnkImprint" href="/imprint/">Imprint</a>
+  <a id="lnkPrivacy" href="/privacy/">Privacy</a>
+</nav>
+
+<header class="top">
+  <div class="top__in">
+    <p class="logo"><span class="logo__u">time</span><span class="dim">@</span>tracker<span class="dim">:~$</span> <span class="logo__run" id="logoRun" hidden></span></p>
+    <nav class="tabs" id="tabs" aria-label="Views">
+      <button type="button" data-view="timer">timer</button>
+      <button type="button" data-view="week">week</button>
+      <button type="button" data-view="entries">entries</button>
+      <button type="button" data-view="projects">projects</button>
+      <button type="button" data-view="data">data</button>
+    </nav>
+  </div>
+</header>
+
+<div id="banner" class="banner" hidden></div>
+<main id="main" class="main" tabindex="-1"><noscript><p class="pad">This tool needs JavaScript. Your data stays in your browser.</p></noscript></main>
+<dialog id="dlg" class="dlg" aria-labelledby="dlgTitle"></dialog>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="config.js?v=1"></script>
+<script src="i18n.js?v=1"></script>
+<script src="core.js?v=1"></script>
+<script src="app.js?v=1"></script>
+</body>
+</html>
