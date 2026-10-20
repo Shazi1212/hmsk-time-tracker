@@ -49,8 +49,8 @@ python3 -m http.server 8080 --directory public   # or: npm start
 # open http://localhost:8080
 ```
 
-`public/config.js` sets where the links back to hmsk.life and the Invoice button point. The fonts Martian Mono and
-Geist are used when found at `/assets/fonts/` or `public/fonts/` (SIL Open Font License); otherwise system fonts.
+`public/config.js` sets where the links back to hmsk.life and the Invoice button point. Fonts
+(Newsreader, Public Sans; SIL Open Font License) are in `public/fonts/`; the shared hmsk.life look is in `public/letterpress.css`.
 
 Demo data: open `/?demo=1`. It is generated in memory and never touches what you stored.
 
