@@ -113,7 +113,7 @@
   function emailOffer(force) {
     if (DEMO && !force) return '';
     if (!force && (state.meta.exports < 1 && state.meta.useDays.length < 5 || state.meta.emailOfferHidden)) return '';
-    const href = (CFG.site || '') + (lang === 'de' ? '/de/?topic=time-tracker#contact' : '/?topic=time-tracker#contact');
+    const href = (CFG.site || '') + (lang === 'de' ? '/de/newsletter/?topic=time-tracker' : '/subscribe/?topic=time-tracker');
     return `<aside class="offer"><p><span class="ps">&gt;</span> ${esc(t('email_offer'))} <a href="${esc(href)}">${esc(t('email_link'))}</a></p>
       <p class="dim small">${esc(t('email_honest'))}</p>${force ? '' : `<button type="button" class="linkish small" data-act="hide-offer">${esc(t('email_hide'))}</button>`}</aside>`;
   }
